@@ -25,16 +25,6 @@ class AuthController extends Controller
             'kode'=>$kode,
         ]);
 
-        // // kirim pake sms nexmo
-        // $basic  = new \Nexmo\Client\Credentials\Basic('0c4da485', '2xicRkYF0tc1KFpH');
-        // $client = new \Nexmo\Client($basic);    
- 
-        // $client->message()->send([
-        //     'to' => '62859160110138',
-        //     'from' => 'Sugih Wallet',
-        //     'text' => 'OTP mu bangg : '.$kode,
-        // ]);
-
         return response()->json([
             'kode'=>200,
             'msg'=>'Otp udah dikirim bang'
